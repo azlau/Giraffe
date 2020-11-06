@@ -1,0 +1,11 @@
+{
+  "links": [],
+  "nodes": [],
+  "stickies": [],
+  "ui": {
+    "showToolboxes": [
+      "Nipype"
+    ]
+  },
+  "version": "v1"
+}
