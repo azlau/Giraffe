@@ -1,6 +1,120 @@
 {
   "links": [],
-  "nodes": [],
+  "nodes": [
+    {
+      "id": "f68cbee7-5b7e-4e1a-85d2-edaed1278cc8",
+      "name": "io_select_files",
+      "class": "io.SelectFiles",
+      "ports": [
+        {
+          "base": "base_directory",
+          "code": [
+            {
+              "language": "Nipype",
+              "argument": {
+                "name": "base_directory"
+              }
+            }
+          ],
+          "editable": true,
+          "id": "eb9d6ebf-ffcb-4d76-a9a5-01a69749497c",
+          "input": true,
+          "inputPort": "bbbe63c2-0fc0-4c1b-860c-51e269f938d6",
+          "name": "base_directory",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sort_filelist",
+          "code": [
+            {
+              "language": "Nipype",
+              "argument": {
+                "name": "sort_filelist"
+              }
+            }
+          ],
+          "editable": true,
+          "id": "573fc8da-7508-4291-9edd-85bf00aa3403",
+          "input": true,
+          "inputPort": "02309c42-233e-491a-b6c5-df710b86747f",
+          "name": "sort_filelist",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "raise_on_empty",
+          "code": [
+            {
+              "language": "Nipype",
+              "argument": {
+                "name": "raise_on_empty"
+              }
+            }
+          ],
+          "editable": true,
+          "id": "e447c99f-9326-4b0f-9dc8-8a26a8bf5f2c",
+          "input": true,
+          "inputPort": "ecf40ab0-0c84-428f-a6a5-40e5e6cc263a",
+          "name": "raise_on_empty",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "force_lists",
+          "code": [
+            {
+              "language": "Nipype",
+              "argument": {
+                "name": "force_lists"
+              }
+            }
+          ],
+          "editable": true,
+          "id": "b33c9720-fa2a-4e70-ac07-db56c5b78e63",
+          "input": true,
+          "inputPort": "8f7638cf-9892-443f-97b5-0d58ada9f94e",
+          "name": "force_lists",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        }
+      ],
+      "position": [
+        397.20000076293945,
+        304
+      ],
+      "code": [
+        {
+          "language": "Nipype",
+          "comment": "Flexibly collect data from disk to feed into workflows.",
+          "argument": {
+            "name": "io.SelectFiles()",
+            "import": "import nipype.interfaces.io as io"
+          }
+        },
+        {
+          "language": "Docker",
+          "argument": {
+            "name": "io"
+          }
+        }
+      ],
+      "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#selectfiles",
+      "colour": "#fe334e"
+    }
+  ],
   "stickies": [],
   "ui": {
     "showToolboxes": [
